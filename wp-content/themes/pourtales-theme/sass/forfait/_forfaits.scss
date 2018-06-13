@@ -1,0 +1,327 @@
+div.container-historique{
+  padding-bottom: 40px;
+   div.favoris{
+     padding: 0 60px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: nowrap;
+
+     div.forfait-mariage{
+       background-image: url('img/forfait-mariage.png');
+       background-position-x:right;
+       background-size: cover;
+       background-repeat: no-repeat;
+       height: 640px;
+       width: 500px;
+       text-align: center;
+       h4{
+         padding-top: 500px;
+         font-size: 25px;
+         font-weight: 400;
+         color: $color-white;
+         span.bold{
+           font-weight: 700;
+         }
+       }
+       img.losange-small{
+         margin-top: 15px;
+         width: 20px;
+         height: 20px;
+       }
+     }
+     div.content-forfaits{
+       padding-left: 38px;
+       div.forfait-wellness{
+         background-image: url('img/forfait-wellness.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         height: 300px;
+         width: 480px;
+         text-align: center;
+         h4{
+           padding-top: 170px;
+           font-size: 25px;
+           font-weight: 400;
+           color: $color-white;
+           span.bold{
+             font-weight: 700;
+           }
+         }
+         img.losange-small{
+           margin-top: 15px;
+           width: 20px;
+           height: 20px;
+         }
+       }
+       div.forfait-gourmet{
+         margin-top: 39px;
+         background-image: url('img/forfait-gourmet.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         height: 300px;
+         width: 480px;
+         text-align: center;
+         h4{
+           padding-top: 170px;
+           font-size: 25px;
+           font-weight: 400;
+           color: $color-white;
+           span.bold{
+             font-weight: 700;
+           }
+         }
+         img.losange-small{
+           margin-top: 15px;
+           width: 20px;
+           height: 20px;
+         }
+       }
+     }
+
+   }
+}
+
+// découvrir
+div.container-decouvrir{
+  margin: 30px auto 30px auto;
+  width: 1170px;
+  //title
+  div.title-decouvrir{
+    display: flex;
+    align-self: center;
+    color: $color-secondary;
+    h3{
+      font-size: 20px;
+      font-weight: 700;
+    }
+    img.losange-small{
+      margin-right: 40px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  //gallerie
+  div.bloc-forfaits{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0 90px 0;
+
+    div.content-forfait{
+      width: 225px;
+      img.img-forfait{
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+      h4{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        color: $color-secondary;
+        span.bold{
+          font-weight: 700;
+        }
+      }
+      div.center-img{
+        text-align: center;
+        img.losange-small{
+          margin-top: 15px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+    }
+  }
+  // bouton contact
+  div.btn-contact{
+    text-align: center;
+    margin: 0 auto 70px auto;
+    a{
+      font-size: 20px;
+      font-weight: 700;
+      padding: 10px 25px;
+      color: $color-white;
+      background-color: $color-secondary;
+      span{
+        font-weight: 700;
+
+      }
+    }
+  }
+
+}
+
+// à partir de 1000px
+@media screen and (max-width: 1000px){
+  div.container-historique{
+    max-width: 100%;
+    padding-bottom: 0px;
+     div.favoris{
+       text-align: center;
+       margin: 0 auto;
+       display: block;
+
+       div.forfait-mariage{
+         margin: 0 auto 80px auto;
+       }
+       div.content-forfaits{
+         padding-left:0;
+         div.forfait-wellness{
+           margin: 0 auto;
+
+           img.losange-small{
+             margin-top: 15px;
+             width: 20px;
+             height: 20px;
+           }
+         }
+         div.forfait-gourmet{
+           margin: 39px auto 0 auto;
+         }
+       }
+
+     }
+
+  }
+
+  // découvrir
+  div.container-decouvrir{
+    padding: 0 70px;
+    div.bloc-forfaits{
+      div.content-forfait{
+        img.img-forfait{
+          width: 80%;
+        }
+      }
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+// à partir de 510px
+@media screen and (max-width: 570px){
+
+  div.container-historique{
+    max-width: 100%;
+
+     div.favoris{
+       text-align: center;
+       padding: 0;
+       margin: 0 auto;
+       display: block;
+
+       div.forfait-mariage{
+         width: 100%;
+         margin: 30px auto 0 auto;
+       }
+       div.content-forfaits{
+         padding-left:0;
+         div.forfait-wellness{
+           width: 100%;
+           margin: 0 auto;
+
+           img.losange-small{
+             margin-top: 15px;
+             width: 20px;
+             height: 20px;
+           }
+         }
+         div.forfait-gourmet{
+           margin: 0px auto 0 auto;
+           width: 100%;
+
+         }
+       }
+
+     }
+  }
+  // découvrir
+  div.container-decouvrir{
+    margin: 30px auto 30px auto;
+    width: auto;
+    //title
+    div.title-decouvrir{
+      display: flex;
+      align-self: center;
+      color: $color-secondary;
+      h3{
+        font-size: 20px;
+        font-weight: 700;
+      }
+      img.losange-small{
+        margin-right: 40px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    //gallerie
+    div.bloc-forfaits{
+      display: block;
+      padding: 60px 0 40px 0;
+
+      div.content-forfait{
+        margin: 0 auto;
+        width: 225px;
+        text-align: center;
+        img.img-forfait{
+          margin: 20px auto 0 auto;
+          padding: 0 10px;
+          width: 100%;
+        }
+        h4{
+          padding-top: 20px;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 400;
+          color: $color-secondary;
+          span.bold{
+            font-weight: 700;
+          }
+        }
+        div.center-img{
+          text-align: center;
+          img.losange-small{
+            margin-top: 15px;
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+      }
+    }
+    // bouton contact
+    div.btn-contact{
+      text-align: center;
+      margin-bottom: 30px;
+      a{
+        font-size: 13px;
+        font-weight: 700;
+        padding: 10px 25px;
+        color: $color-white;
+        line-height: 40px;
+        background-color: $color-secondary;
+        span{
+          font-weight: 700;
+
+        }
+      }
+    }
+
+  }
+
+
+
+
+}

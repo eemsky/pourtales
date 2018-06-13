@@ -1,0 +1,176 @@
+div.container-distractions{
+  max-width: 1300px;
+  p{
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+    padding: 5% 0 7% 0;
+
+  }
+  div.title-distractions{
+    text-align: center;
+    margin-top: 3%;
+    img.icon-losange{
+      width: 90px;
+      height: 90px;
+    }
+    h3{
+      padding-top: 2%;
+      font-size: 35px;
+      font-weight: 800;
+      color: $color-secondary;
+      line-height: 26px;
+      padding-bottom: 4%;
+      span.bold{
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+  div.bloc-flex{
+    display: flex;
+    justify-content: center;
+    // seminaire
+    div.bloc-seminaire,div.bloc-give{
+      text-align: center;
+      div.img-seminaire,div.img-give{
+        img.img-seminaire,img.img-give{
+          width: 100%;
+          height: auto;
+          padding-bottom: 10%;
+        }
+        h4{
+          font-size: 25px;
+          font-weight: 400;
+          color: $color-secondary;
+          span.bold{
+            font-weight: 700;
+          }
+        }
+        img{
+          margin-top: 15px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    // parc
+    div.bloc-parc{
+      text-align: center;
+      div.img-parc{
+        img.img-parc{
+          width: 83%;
+          height: auto;
+          padding-bottom: 10%;
+        }
+        h4{
+          font-size: 25px;
+          font-weight: 400;
+          color: $color-secondary;
+          span.bold{
+            font-weight: 700;
+          }
+        }
+        img{
+          margin-top: 15px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+
+// à partir de 950px
+@media screen and (max-width: 950px){
+  div.container-distractions{
+    div.bloc-flex{
+      // seminaire
+      div.bloc-seminaire,div.bloc-give{
+        div.img-seminaire,div.img-give{
+          h4{
+            font-size: 20px;
+          }
+        }
+      }
+      // parc
+      div.bloc-parc{
+        div.img-parc{
+          h4{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// à partir de 770px
+@media screen and (max-width: 770px){
+  div.container-distractions{
+    div.bloc-flex{
+      // seminaire
+      div.bloc-seminaire,div.bloc-give{
+        div.img-seminaire,div.img-give{
+          h4{
+            font-size: 17px;
+          }
+        }
+      }
+      // parc
+      div.bloc-parc{
+        div.img-parc{
+          h4{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// à partir de 580px
+@media screen and (max-width: 580px){
+  div.container-distractions{
+    div.bloc-flex{
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+  }
+}
+
+
+// à partir de 450px
+@media screen and (max-width: 580px){
+  div.container-distractions{
+    div.bloc-flex{
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      div.bloc-seminaire,div.bloc-give{
+        div.img-seminaire,div.img-give{
+          img.img-seminaire,img.img-give{
+            padding-top: 7%;
+          }
+        }
+      }
+      // parc
+      div.bloc-parc{
+        div.img-parc{
+          img.img-parc{
+            width: 100%;
+            padding-top: 7%;
+          }
+        }
+      }
+    }
+  }
+}

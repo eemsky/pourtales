@@ -1,0 +1,24 @@
+div.container-home{
+  position: absolute;
+  z-index: 10000;
+  padding-top: 40px;
+  div.logo{
+    width: 213px;
+    height: 90px;
+    padding-left: 20px;
+
+  }
+}
+nav.nav{
+  display: none;
+}
+// à partir de 900px
+@media screen and (max-width: 900px){
+  div.container-home{
+    div.logo{
+      margin: 0 auto;
+      text-align: center;
+      padding-left:0;
+    }
+  }
+}

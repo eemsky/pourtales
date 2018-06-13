@@ -1,0 +1,1922 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/*------------------------------------*    MAIN
+\*------------------------------------*/
+/* global box-sizing */
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+/* clear */
+.clear:before,
+.clear:after {
+  content: ' ';
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #444;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid #04A4CC;
+}
+
+/*------------------------------------*    STRUCTURE
+\*------------------------------------*/
+/* wrapper */
+.wrapper {
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* header */
+/* logo */
+/* nav */
+/* sidebar */
+/* footer */
+/*------------------------------------*    PAGES
+\*------------------------------------*/
+/*------------------------------------*    IMAGES
+\*------------------------------------*/
+/*------------------------------------*	TYPOGRAPHY
+\*------------------------------------*/
+@font-face {
+  font-family: 'Font-Name';
+  src: url("fonts/font-name.eot");
+  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"), url("fonts/font-name.woff") format("woff"), url("fonts/font-name.ttf") format("truetype"), url("fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------------------*    RESPONSIVE
+\*------------------------------------*/
+/*------------------------------------*    MISC
+\*------------------------------------*/
+::selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/*------------------------------------*    WORDPRESS CORE
+\*------------------------------------*/
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #FFF;
+  border: 1px solid #F0F0F0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/*------------------------------------*    PRINT
+\*------------------------------------*/
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr, img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+body.home button#responsive-menu-button {
+  right: 3%;
+  margin-top: 2%;
+  background-color: transparent;
+}
+
+body.home button#responsive-menu-button span.responsive-menu-box span.responsive-menu-inner:before, body.home button#responsive-menu-button span.responsive-menu-box span.responsive-menu-inner:after, body.home button#responsive-menu-button span.responsive-menu-box span.responsive-menu-inner {
+  background-color: #cdae7a;
+}
+
+div.container-home {
+  position: absolute;
+  z-index: 10000;
+  padding-top: 40px;
+}
+
+div.container-home div.logo {
+  width: 213px;
+  height: 90px;
+  padding-left: 20px;
+}
+
+nav.nav {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  div.container-home div.logo {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+div#responsive-menu-container {
+  background-color: #000;
+  opacity: 0.7;
+  width: 100%;
+}
+
+div#responsive-menu-container div#responsive-menu-wrapper ul#responsive-menu li.responsive-menu-item a {
+  background-color: #000;
+}
+
+div.container-slider {
+  margin: 0;
+  padding: 0;
+}
+
+div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide {
+  height: auto;
+  width: 100%;
+}
+
+div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home {
+  color: #fff;
+  padding-top: 21%;
+  padding-left: 5%;
+}
+
+div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home h2.title_slider-home {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home p.subtitle_slider-home {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home a.cta-reserver {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #000;
+  background-color: #fff;
+}
+
+div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home p.city {
+  margin-top: 13%;
+  padding-bottom: 5%;
+}
+
+div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home p.city span.city-name {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+div.container-slider div.slider-home ul.slick-dots {
+  padding-right: 3%;
+  text-align: right;
+  padding-bottom: 3%;
+}
+
+div.container-slider div.slider-home ul.slick-dots li button::before:active {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -50px;
+  opacity: 1;
+}
+
+div.container-slider div.slider-home ul.slick-dots li button::before {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 900px) {
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home {
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home h2.title_slider-home {
+    font-size: 50px;
+  }
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home p.subtitle_slider-home {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home {
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home h2.title_slider-home {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home p.subtitle_slider-home {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home {
+    padding-top: 35%;
+    height: 600px;
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home h2.title_slider-home {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home p.subtitle_slider-home {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  div.container-slider div.slider-home div.slick-list div.slick-track div.slick-slide div.img-bg-home {
+    padding-top: 40%;
+    padding-left: 0;
+    text-align: center;
+  }
+  div.container-slider div.slider-home ul.slick-dots {
+    text-align: center;
+  }
+}
+
+div.container-distractions {
+  max-width: 1300px;
+}
+
+div.container-distractions p {
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  padding: 5% 0 7% 0;
+}
+
+div.container-distractions div.title-distractions {
+  text-align: center;
+  margin-top: 3%;
+}
+
+div.container-distractions div.title-distractions img.icon-losange {
+  width: 90px;
+  height: 90px;
+}
+
+div.container-distractions div.title-distractions h3 {
+  padding-top: 2%;
+  font-size: 35px;
+  font-weight: 800;
+  color: #000;
+  line-height: 26px;
+  padding-bottom: 4%;
+}
+
+div.container-distractions div.title-distractions h3 span.bold {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+div.container-distractions div.bloc-flex {
+  display: flex;
+  justify-content: center;
+}
+
+div.container-distractions div.bloc-flex div.bloc-seminaire, div.container-distractions div.bloc-flex div.bloc-give {
+  text-align: center;
+}
+
+div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire img.img-seminaire, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire img.img-give, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give img.img-seminaire, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give img.img-give, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire img.img-seminaire, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire img.img-give, div.container-distractions div.bloc-flex div.bloc-give div.img-give img.img-seminaire, div.container-distractions div.bloc-flex div.bloc-give div.img-give img.img-give {
+  width: 100%;
+  height: auto;
+  padding-bottom: 10%;
+}
+
+div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire h4, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give h4, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire h4, div.container-distractions div.bloc-flex div.bloc-give div.img-give h4 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+}
+
+div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire h4 span.bold, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give h4 span.bold, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire h4 span.bold, div.container-distractions div.bloc-flex div.bloc-give div.img-give h4 span.bold {
+  font-weight: 700;
+}
+
+div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire img, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give img, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire img, div.container-distractions div.bloc-flex div.bloc-give div.img-give img {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+div.container-distractions div.bloc-flex div.bloc-parc {
+  text-align: center;
+}
+
+div.container-distractions div.bloc-flex div.bloc-parc div.img-parc img.img-parc {
+  width: 83%;
+  height: auto;
+  padding-bottom: 10%;
+}
+
+div.container-distractions div.bloc-flex div.bloc-parc div.img-parc h4 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+}
+
+div.container-distractions div.bloc-flex div.bloc-parc div.img-parc h4 span.bold {
+  font-weight: 700;
+}
+
+div.container-distractions div.bloc-flex div.bloc-parc div.img-parc img {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire h4, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give h4, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire h4, div.container-distractions div.bloc-flex div.bloc-give div.img-give h4 {
+    font-size: 20px;
+  }
+  div.container-distractions div.bloc-flex div.bloc-parc div.img-parc h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire h4, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give h4, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire h4, div.container-distractions div.bloc-flex div.bloc-give div.img-give h4 {
+    font-size: 17px;
+  }
+  div.container-distractions div.bloc-flex div.bloc-parc div.img-parc h4 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  div.container-distractions div.bloc-flex {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  div.container-distractions div.bloc-flex {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire img.img-seminaire, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-seminaire img.img-give, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give img.img-seminaire, div.container-distractions div.bloc-flex div.bloc-seminaire div.img-give img.img-give, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire img.img-seminaire, div.container-distractions div.bloc-flex div.bloc-give div.img-seminaire img.img-give, div.container-distractions div.bloc-flex div.bloc-give div.img-give img.img-seminaire, div.container-distractions div.bloc-flex div.bloc-give div.img-give img.img-give {
+    padding-top: 7%;
+  }
+  div.container-distractions div.bloc-flex div.bloc-parc div.img-parc img.img-parc {
+    width: 100%;
+    padding-top: 7%;
+  }
+}
+
+div.container-actu {
+  background-color: #f9f9f9;
+  padding: 3% 0 6% 0;
+}
+
+div.container-actu div.title-actu {
+  text-align: center;
+  margin-top: 3%;
+}
+
+div.container-actu div.title-actu img.icon-losange {
+  width: 90px;
+  height: 90px;
+}
+
+div.container-actu div.title-actu h3 {
+  padding-top: 2%;
+  font-size: 35px;
+  font-weight: 800;
+  color: #000;
+  line-height: 26px;
+  padding-bottom: 4%;
+}
+
+div.container-actu div.slider-actu div.flex-bloc {
+  display: flex !important;
+  padding: 30px;
+}
+
+div.container-actu div.slider-actu div.flex-bloc img.img-actu {
+  width: 130px;
+  height: 130px;
+}
+
+div.container-actu div.slider-actu div.flex-bloc div.flex-text {
+  padding-left: 20px;
+}
+
+div.container-actu div.slider-actu div.flex-bloc div.flex-text p.date-actu {
+  color: #cdae7a;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+div.container-actu div.slider-actu div.flex-bloc div.flex-text p.title-actu {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.container-actu div.slider-actu div.flex-bloc div.flex-text p.text-actu {
+  font-size: 14px;
+}
+
+div.container-actu div.slider-actu ul.slick-dots {
+  text-align: center;
+}
+
+div.container-actu div.slider-actu ul.slick-dots li button::before:active {
+  font-size: 30px;
+  color: #cdae7a;
+  opacity: 1;
+}
+
+div.container-actu div.slider-actu ul.slick-dots li button::before {
+  font-size: 30px;
+  color: #cdae7a;
+}
+
+@media screen and (max-width: 550px) {
+  div.container-actu {
+    padding: 60px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  div.container-actu div.title-actu img.icon-losange {
+    text-align: center;
+    margin: 0 auto;
+  }
+  div.container-actu div.slider-actu div.flex-bloc {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  div.container-actu div.slider-actu div.flex-bloc img.img-actu {
+    margin: 0 auto;
+  }
+  div.container-actu div.slider-actu div.flex-bloc div.flex-text {
+    padding-left: 0px;
+  }
+  div.container-actu div.slider-actu div.flex-bloc div.flex-text p.date-actu {
+    margin-top: 20px;
+  }
+}
+
+div.container-sejour {
+  padding: 0;
+}
+
+div.container-sejour div.title-sejour {
+  display: flex;
+  background-color: #000;
+}
+
+div.container-sejour div.title-sejour div.text-sejour {
+  width: 50%;
+  color: #fff;
+  padding: 140px 0 0 140px;
+}
+
+div.container-sejour div.title-sejour div.text-sejour h3 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 26px;
+}
+
+div.container-sejour div.title-sejour div.text-sejour h3 br.mobile {
+  display: none;
+}
+
+div.container-sejour div.title-sejour div.text-sejour p {
+  font-size: 18px;
+}
+
+div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation {
+  padding-top: 30px;
+}
+
+div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-arrive, div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-depart {
+  padding-top: 20px;
+}
+
+div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-arrive input, div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-depart input {
+  padding: 5px 0 7px 16px;
+  text-align: right;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #cdae7a;
+}
+
+div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-depart {
+  padding-bottom: 60px;
+}
+
+div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation a.cta-reserver {
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #000;
+  background-color: #fff;
+}
+
+div.container-sejour div.title-sejour div.img-sejour {
+  width: 50%;
+}
+
+div.container-sejour img.losange-deco {
+  margin-top: 15px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 47.7%;
+  top: 40%;
+}
+
+@media screen and (max-width: 1380px) {
+  div.container-sejour {
+    padding: 0;
+  }
+  div.container-sejour div.title-sejour {
+    display: flex;
+    background-color: #000;
+  }
+  div.container-sejour div.title-sejour div.text-sejour {
+    padding: 70px 0 0 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  div.container-sejour {
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  div.container-sejour div.title-sejour {
+    display: block;
+  }
+  div.container-sejour div.title-sejour div.text-sejour {
+    width: 100%;
+    padding: 100px 0 90px 0;
+  }
+  div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation {
+    display: flex;
+    justify-content: center;
+  }
+  div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-arrive, div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-depart {
+    padding-top: 10px;
+    padding-right: 40px;
+  }
+  div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-depart {
+    padding-bottom: 0px;
+  }
+  div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation a.cta-reserver {
+    display: flex;
+    margin-top: 5px;
+  }
+  div.container-sejour div.title-sejour div.img-sejour {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 100px;
+  }
+  div.container-sejour img.losange-deco {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  div.container-sejour {
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  div.container-sejour div.title-sejour {
+    display: block;
+  }
+  div.container-sejour div.title-sejour div.text-sejour {
+    width: inherit;
+    padding: 100px 0 90px 0;
+  }
+  div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation {
+    display: block;
+    justify-content: center;
+  }
+  div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-arrive, div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-depart {
+    padding-top: 10px;
+    padding-right: 40px;
+  }
+  div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation p.formulaire-depart {
+    padding-bottom: 0px;
+  }
+  div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation a.cta-reserver {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: min-content;
+    margin-top: 50px;
+  }
+  div.container-sejour div.title-sejour div.img-sejour {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 100px;
+  }
+  div.container-sejour img.losange-deco {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  div.container-sejour div.title-sejour div.text-sejour h3 {
+    line-height: 40px;
+  }
+  div.container-sejour div.title-sejour div.text-sejour h3 br.mobile {
+    display: block;
+  }
+  div.container-sejour div.title-sejour div.img-sejour {
+    width: 100%;
+    padding-bottom: 0;
+  }
+}
+
+div.container-footer {
+  background-color: #202020;
+  padding: 60px 70px;
+}
+
+div.container-footer div.content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.container-footer div.content-footer img.logo-footer {
+  width: 213px;
+  height: 90px;
+}
+
+div.container-footer div.content-footer p.contact {
+  font-size: 14px;
+  color: #fff;
+}
+
+div.container-footer div.content-footer img.social-icons {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+  div.container-footer {
+    background-color: #202020;
+    padding: 60px 70px;
+  }
+  div.container-footer div.content-footer {
+    display: block;
+  }
+  div.container-footer div.content-footer img.logo-footer {
+    margin-bottom: 30px;
+  }
+  div.container-footer div.content-footer p.contact {
+    margin-bottom: 30px;
+  }
+  div.container-footer div.content-footer img.social-icons {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+  }
+}
+
+div.container-slider-histoire {
+  margin: 0;
+  padding: 0;
+}
+
+div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide {
+  height: auto;
+  width: 100%;
+}
+
+div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire {
+  color: #fff;
+  padding-top: 21%;
+  padding-left: 5%;
+}
+
+div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire h2.title_slider-histoire {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire p.subtitle_slider-histoire {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire a.cta-reserver {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #000;
+  background-color: #fff;
+}
+
+div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire p.city {
+  margin-top: 13%;
+  padding-bottom: 5%;
+}
+
+div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire p.city span.city-name {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+div.container-slider-histoire div.slider-histoire ul.slick-dots {
+  padding-right: 3%;
+  text-align: right;
+  padding-bottom: 3%;
+}
+
+div.container-slider-histoire div.slider-histoire ul.slick-dots li button::before:active {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -50px;
+  opacity: 1;
+}
+
+div.container-slider-histoire div.slider-histoire ul.slick-dots li button::before {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 900px) {
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire {
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire h2.title_slider-histoire {
+    font-size: 50px;
+  }
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire p.subtitle_slider-histoire {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire {
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire h2.title_slider-histoire {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire p.subtitle_slider-histoire {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire {
+    padding-top: 35%;
+    height: 600px;
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire h2.title_slider-histoire {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire p.subtitle_slider-histoire {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire {
+    padding-top: 40%;
+    padding-left: 0;
+    text-align: center;
+  }
+  div.container-slider-histoire div.slider-histoire ul.slick-dots {
+    text-align: center;
+  }
+}
+
+div.container-slider-forfait {
+  margin: 0;
+  padding: 0;
+}
+
+div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide {
+  height: auto;
+  width: 100%;
+}
+
+div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait {
+  color: #fff;
+  padding-top: 21%;
+  padding-left: 5%;
+}
+
+div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait h2.title_slider-forfait {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait p.subtitle_slider-forfait {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait a.cta-reserver {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #000;
+  background-color: #fff;
+}
+
+div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait p.city {
+  margin-top: 13%;
+  padding-bottom: 5%;
+}
+
+div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait p.city span.city-name {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+div.container-slider-forfait div.slider-forfait ul.slick-dots {
+  padding-right: 3%;
+  text-align: right;
+  padding-bottom: 3%;
+}
+
+div.container-slider-forfait div.slider-forfait ul.slick-dots li button::before:active {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -50px;
+  opacity: 1;
+}
+
+div.container-slider-forfait div.slider-forfait ul.slick-dots li button::before {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 900px) {
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait {
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait h2.title_slider-forfait {
+    font-size: 50px;
+  }
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait p.subtitle_slider-forfait {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait {
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait h2.title_slider-forfait {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait p.subtitle_slider-forfait {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait {
+    padding-top: 35%;
+    height: 600px;
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait h2.title_slider-forfait {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait p.subtitle_slider-forfait {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait {
+    padding-top: 40%;
+    padding-left: 0;
+    text-align: center;
+  }
+  div.container-slider-forfait div.slider-forfait ul.slick-dots {
+    text-align: center;
+  }
+}
+
+div.container-slider-contact {
+  margin: 0;
+  padding: 0;
+}
+
+div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide {
+  height: auto;
+  width: 100%;
+}
+
+div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact {
+  color: #fff;
+  padding-top: 21%;
+  padding-left: 5%;
+}
+
+div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact h2.title_slider-contact {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact p.subtitle_slider-contact {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact a.cta-reserver {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #000;
+  background-color: #fff;
+}
+
+div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact p.city {
+  margin-top: 13%;
+  padding-bottom: 5%;
+  font-size: 20px;
+}
+
+div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact p.city span.city-name {
+  font-weight: 700;
+}
+
+div.container-slider-contact div.slider-contact ul.slick-dots {
+  padding-right: 3%;
+  text-align: right;
+  padding-bottom: 3%;
+}
+
+div.container-slider-contact div.slider-contact ul.slick-dots li button::before:active {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -50px;
+  opacity: 1;
+}
+
+div.container-slider-contact div.slider-contact ul.slick-dots li button::before {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 900px) {
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact {
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact h2.title_slider-contact {
+    font-size: 50px;
+  }
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact p.subtitle_slider-contact {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact {
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact h2.title_slider-contact {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact p.subtitle_slider-contact {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact {
+    padding-top: 35%;
+    height: 600px;
+    color: #fff;
+    padding-left: 8%;
+  }
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact h2.title_slider-contact {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact p.subtitle_slider-contact {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact {
+    padding-top: 40%;
+    padding-left: 0;
+    text-align: center;
+  }
+  div.container-slider-contact div.slider-contact ul.slick-dots {
+    text-align: center;
+  }
+}
+
+div.container-historique {
+  color: #000;
+}
+
+div.container-historique div.title-historique {
+  text-align: center;
+  margin-top: 3%;
+}
+
+div.container-historique div.title-historique img.icon-losange {
+  width: 90px;
+  height: 90px;
+}
+
+div.container-historique div.title-historique h3 {
+  padding-top: 2%;
+  font-size: 35px;
+  font-weight: 800;
+  color: #000;
+  line-height: 26px;
+  padding-bottom: 4%;
+}
+
+div.container-historique div.title-historique h3 span.bold {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+div.container-historique div.historique {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+div.container-historique div.historique img {
+  width: 40%;
+}
+
+div.container-historique div.historique p.text-historique {
+  width: 40%;
+  font-size: 16px;
+  padding: 50px;
+}
+
+div.container-historique div.content-points {
+  display: flex;
+  padding: 0 10% 80px 4%;
+}
+
+div.container-historique div.content-points img.deco-losange {
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+
+div.container-historique div.content-points div h4.title-points {
+  font-size: 20px;
+}
+
+div.container-historique div.content-points div p.text-points {
+  font-size: 17px;
+}
+
+div.container-historique div.content-points div.slider-missions {
+  margin-top: 30px;
+  margin-right: 30px;
+  background-color: #f9f9f9;
+  padding: 30px 30px 30px 30px;
+}
+
+div.container-historique div.content-points div.slider-missions ul.slick-dots li button::before:active {
+  font-size: 30px;
+  color: #cdae7a;
+  opacity: 1;
+}
+
+div.container-historique div.content-points div.slider-missions ul.slick-dots li button::before {
+  font-size: 30px;
+  color: #cdae7a;
+  margin-top: 15px;
+}
+
+div.container-historique div.content-points div.slider-missions p {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1380px) {
+  div.container-historique div.title-historique {
+    text-align: center;
+  }
+  div.container-historique div.historique {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  div.container-historique div.historique img {
+    width: 50%;
+  }
+  div.container-historique div.historique p.text-historique {
+    text-align: left;
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+
+div.container-historique {
+  padding-bottom: 40px;
+}
+
+div.container-historique div.favoris {
+  padding: 0 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+div.container-historique div.favoris div.forfait-mariage {
+  background-image: url("img/forfait-mariage.png");
+  background-position-x: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 640px;
+  width: 500px;
+  text-align: center;
+}
+
+div.container-historique div.favoris div.forfait-mariage h4 {
+  padding-top: 500px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+
+div.container-historique div.favoris div.forfait-mariage h4 span.bold {
+  font-weight: 700;
+}
+
+div.container-historique div.favoris div.forfait-mariage img.losange-small {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+div.container-historique div.favoris div.content-forfaits {
+  padding-left: 38px;
+}
+
+div.container-historique div.favoris div.content-forfaits div.forfait-wellness {
+  background-image: url("img/forfait-wellness.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 480px;
+  text-align: center;
+}
+
+div.container-historique div.favoris div.content-forfaits div.forfait-wellness h4 {
+  padding-top: 170px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+
+div.container-historique div.favoris div.content-forfaits div.forfait-wellness h4 span.bold {
+  font-weight: 700;
+}
+
+div.container-historique div.favoris div.content-forfaits div.forfait-wellness img.losange-small {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+div.container-historique div.favoris div.content-forfaits div.forfait-gourmet {
+  margin-top: 39px;
+  background-image: url("img/forfait-gourmet.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 480px;
+  text-align: center;
+}
+
+div.container-historique div.favoris div.content-forfaits div.forfait-gourmet h4 {
+  padding-top: 170px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+
+div.container-historique div.favoris div.content-forfaits div.forfait-gourmet h4 span.bold {
+  font-weight: 700;
+}
+
+div.container-historique div.favoris div.content-forfaits div.forfait-gourmet img.losange-small {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+div.container-decouvrir {
+  margin: 30px auto 30px auto;
+  width: 1170px;
+}
+
+div.container-decouvrir div.title-decouvrir {
+  display: flex;
+  align-self: center;
+  color: #000;
+}
+
+div.container-decouvrir div.title-decouvrir h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div.container-decouvrir div.title-decouvrir img.losange-small {
+  margin-right: 40px;
+  width: 20px;
+  height: 20px;
+}
+
+div.container-decouvrir div.bloc-forfaits {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0 90px 0;
+}
+
+div.container-decouvrir div.bloc-forfaits div.content-forfait {
+  width: 225px;
+}
+
+div.container-decouvrir div.bloc-forfaits div.content-forfait img.img-forfait {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+div.container-decouvrir div.bloc-forfaits div.content-forfait h4 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+div.container-decouvrir div.bloc-forfaits div.content-forfait h4 span.bold {
+  font-weight: 700;
+}
+
+div.container-decouvrir div.bloc-forfaits div.content-forfait div.center-img {
+  text-align: center;
+}
+
+div.container-decouvrir div.bloc-forfaits div.content-forfait div.center-img img.losange-small {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+div.container-decouvrir div.btn-contact {
+  text-align: center;
+  margin: 0 auto 70px auto;
+}
+
+div.container-decouvrir div.btn-contact a {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #000;
+}
+
+div.container-decouvrir div.btn-contact a span {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  div.container-historique {
+    max-width: 100%;
+    padding-bottom: 0px;
+  }
+  div.container-historique div.favoris {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  div.container-historique div.favoris div.forfait-mariage {
+    margin: 0 auto 80px auto;
+  }
+  div.container-historique div.favoris div.content-forfaits {
+    padding-left: 0;
+  }
+  div.container-historique div.favoris div.content-forfaits div.forfait-wellness {
+    margin: 0 auto;
+  }
+  div.container-historique div.favoris div.content-forfaits div.forfait-wellness img.losange-small {
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  div.container-historique div.favoris div.content-forfaits div.forfait-gourmet {
+    margin: 39px auto 0 auto;
+  }
+  div.container-decouvrir {
+    padding: 0 70px;
+  }
+  div.container-decouvrir div.bloc-forfaits div.content-forfait img.img-forfait {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  div.container-historique {
+    max-width: 100%;
+  }
+  div.container-historique div.favoris {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+  }
+  div.container-historique div.favoris div.forfait-mariage {
+    width: 100%;
+    margin: 30px auto 0 auto;
+  }
+  div.container-historique div.favoris div.content-forfaits {
+    padding-left: 0;
+  }
+  div.container-historique div.favoris div.content-forfaits div.forfait-wellness {
+    width: 100%;
+    margin: 0 auto;
+  }
+  div.container-historique div.favoris div.content-forfaits div.forfait-wellness img.losange-small {
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  div.container-historique div.favoris div.content-forfaits div.forfait-gourmet {
+    margin: 0px auto 0 auto;
+    width: 100%;
+  }
+  div.container-decouvrir {
+    margin: 30px auto 30px auto;
+    width: auto;
+  }
+  div.container-decouvrir div.title-decouvrir {
+    display: flex;
+    align-self: center;
+    color: #000;
+  }
+  div.container-decouvrir div.title-decouvrir h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  div.container-decouvrir div.title-decouvrir img.losange-small {
+    margin-right: 40px;
+    width: 20px;
+    height: 20px;
+  }
+  div.container-decouvrir div.bloc-forfaits {
+    display: block;
+    padding: 60px 0 40px 0;
+  }
+  div.container-decouvrir div.bloc-forfaits div.content-forfait {
+    margin: 0 auto;
+    width: 225px;
+    text-align: center;
+  }
+  div.container-decouvrir div.bloc-forfaits div.content-forfait img.img-forfait {
+    margin: 20px auto 0 auto;
+    padding: 0 10px;
+    width: 100%;
+  }
+  div.container-decouvrir div.bloc-forfaits div.content-forfait h4 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+  }
+  div.container-decouvrir div.bloc-forfaits div.content-forfait h4 span.bold {
+    font-weight: 700;
+  }
+  div.container-decouvrir div.bloc-forfaits div.content-forfait div.center-img {
+    text-align: center;
+  }
+  div.container-decouvrir div.bloc-forfaits div.content-forfait div.center-img img.losange-small {
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  div.container-decouvrir div.btn-contact {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  div.container-decouvrir div.btn-contact a {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 25px;
+    color: #fff;
+    line-height: 40px;
+    background-color: #000;
+  }
+  div.container-decouvrir div.btn-contact a span {
+    font-weight: 700;
+  }
+}
+
+div.container-historique div.favoris div.formulaire-contact {
+  margin: 0 auto;
+}
+
+div.container-historique div.favoris div.formulaire-contact input::placeholder, div.container-historique div.favoris div.formulaire-contact textarea::placeholder {
+  font-size: 15px;
+  padding: 10px;
+  color: #000;
+}
+
+div.container-historique div.favoris div.formulaire-contact input {
+  font-style: italic;
+  margin: 5px 0;
+  padding: 20px;
+  width: 700px;
+  background-color: #fff;
+  border: 1px solid #cdae7a;
+}
+
+div.container-historique div.favoris div.formulaire-contact span.wpcf7-list-item {
+  margin: 30px 0;
+  display: flex;
+  width: 670px;
+  justify-content: flex-start;
+}
+
+div.container-historique div.favoris div.formulaire-contact span.wpcf7-list-item input {
+  width: 30px;
+}
+
+div.container-historique div.favoris div.formulaire-contact span.wpcf7-list-item-label {
+  text-align: left;
+  width: 650px;
+}
+
+div.container-historique div.favoris div.formulaire-contact input, div.container-historique div.favoris div.formulaire-contact textarea {
+  color: #000;
+  font-size: 16px;
+}
+
+div.container-historique div.favoris div.formulaire-contact textarea {
+  padding: 20px;
+  font-style: italic;
+  width: 700px;
+  background-color: #fff;
+  border: 1px solid #cdae7a;
+}
+
+div.container-historique div.favoris div.formulaire-contact input.wpcf7-submit {
+  width: 150px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px;
+  background-color: #000 !important;
+  border: none;
+  margin-bottom: 40px;
+}
+
+div.container-historique div.favoris div.formulaire-contact input.wpcf7-submit:hover {
+  background-color: #cdae7a !important;
+  color: #000;
+}
+
+@media screen and (max-width: 846px) {
+  div.container-historique div.favoris div.formulaire-contact input {
+    width: 400px;
+  }
+  div.container-historique div.favoris div.formulaire-contact span.wpcf7-list-item {
+    text-align: center;
+    margin: 0 auto;
+    width: 370px;
+  }
+  div.container-historique div.favoris div.formulaire-contact span.wpcf7-list-item-label {
+    width: 650px;
+  }
+  div.container-historique div.favoris div.formulaire-contact textarea {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.container-historique div.favoris div.formulaire-contact input {
+    width: 300px;
+  }
+  div.container-historique div.favoris div.formulaire-contact span.wpcf7-list-item {
+    width: 270px;
+  }
+  div.container-historique div.favoris div.formulaire-contact span.wpcf7-list-item-label {
+    width: 300px;
+  }
+  div.container-historique div.favoris div.formulaire-contact textarea {
+    width: 300px;
+  }
+}
+
+div.container-slider-perso div.slider-perso img.img-home {
+  width: 100%;
+}
+
+div.container-slider-perso div.slider-perso div.text-single {
+  color: #000;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+div.container-slider-perso div.slider-perso div.text-single h2.title_slider-home {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+div.container-slider-perso div.slider-perso div.text-single p.subtitle_slider-home {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+div.container-slider-perso div.slider-perso div.text-single a.cta-reserver {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #cdae7a;
+  background-color: #000;
+}
+
+div.text_cadre_perso {
+  display: flex;
+  padding: 0 10% 80px 4%;
+}
+
+div.text_cadre_perso h4.title-points {
+  font-size: 20px;
+}
+
+div.text_cadre_perso p.text-points {
+  font-size: 17px;
+}
+
+div.text_cadre_perso img.deco-losange {
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+
+div.tarifs-size {
+  width: 900px;
+  margin: 0 auto;
+}
+
+div.tarifs-size div.btn-contact {
+  text-align: center;
+  margin: 100px auto 70px auto;
+}
+
+div.tarifs-size div.btn-contact a {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #000;
+}
+
+div.tarifs-size div.btn-contact a span {
+  font-weight: 700;
+}
+
+div.tarifs-size div.tarifs {
+  display: flex;
+  justify-content: center;
+}
+
+div.tarifs-size div.tarifs div.tarif-left, div.tarifs-size div.tarifs div.tarif-right {
+  padding: 40px;
+}
+
+div.tarifs-size div.tarifs div.tarif-left {
+  width: 65%;
+  background-color: #f9f9f9;
+}
+
+div.tarifs-size div.tarifs div.tarif-left h4.title-points {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 30px;
+}
+
+div.tarifs-size div.tarifs div.tarif-left h4.title-points span.regular {
+  font-style: italic;
+  font-weight: 400;
+}
+
+div.tarifs-size div.tarifs div.tarif-left div.points_price {
+  padding-top: 20px;
+  display: flex;
+}
+
+div.tarifs-size div.tarifs div.tarif-left div.points_price img.deco-losange {
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+}
+
+div.tarifs-size div.tarifs div.tarif-left div.points_price p.text-price {
+  font-size: 17px;
+}
+
+div.tarifs-size div.tarifs div.tarif-right {
+  width: 35%;
+  background-color: #cdae7a;
+  font-size: 17px;
+}
+
+div.tarifs-size div.tarifs div.tarif-right h4.title-points {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+div.tarifs-size div.tarifs div.tarif-right a.cta-reserver {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #000;
+}
+
+@media screen and (max-width: 900px) {
+  div.container-slider-perso div.slider-perso {
+    min-height: 600px;
+  }
+  div.container-slider-perso div.slider-perso img.img-home {
+    width: 100%;
+  }
+  div.container-slider-perso div.slider-perso div.text-single {
+    color: #000;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+  }
+  div.container-slider-perso div.slider-perso div.text-single h2.title_slider-home {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    line-height: 60px;
+  }
+  div.container-slider-perso div.slider-perso div.text-single p.subtitle_slider-home {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  div.container-slider-perso div.slider-perso div.text-single a.cta-reserver {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 25px;
+    color: #cdae7a;
+    background-color: #000;
+  }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}

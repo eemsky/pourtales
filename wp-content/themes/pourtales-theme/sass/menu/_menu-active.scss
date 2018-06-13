@@ -1,0 +1,16 @@
+div#responsive-menu-container{
+  background-color: $color-secondary;
+  opacity: 0.7;
+  width: 100%;
+  div#responsive-menu-wrapper{
+    ul#responsive-menu{
+      li.responsive-menu-item{
+          a{
+            background-color: $color-secondary;
+
+          }
+
+      }
+    }
+  }
+}

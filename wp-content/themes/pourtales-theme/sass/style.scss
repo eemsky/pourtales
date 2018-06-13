@@ -1,0 +1,26 @@
+@import 'reset.scss';
+@import 'global/fonts.scss';
+@import 'global/colors.scss';
+@import 'menu/burger-menu.scss';
+@import 'menu/menu-home.scss';
+@import 'menu/menu-active.scss';
+@import 'home/slider-home.scss';
+@import 'home/distraction-home.scss';
+@import 'home/actu-home.scss';
+@import 'home/sejour-home.scss';
+@import 'footer.scss';
+@import 'histoire/slider-histoire.scss';
+@import 'forfait/slider-forfait.scss';
+@import 'contact/slider-contact.scss';
+@import 'histoire/historique.scss';
+@import 'forfait/forfaits.scss';
+@import 'contact/contact.scss';
+@import 'forfait/forfait_single_page.scss';
+
+body{
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none!important;
+}

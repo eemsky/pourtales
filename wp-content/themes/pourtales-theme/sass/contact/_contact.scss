@@ -1,0 +1,106 @@
+div.container-historique{
+  div.favoris{
+    div.formulaire-contact{
+      margin: 0 auto;
+      input::placeholder, textarea::placeholder {
+        font-size: 15px;
+        padding: 10px;
+        color: $color-secondary;
+      }
+      input{
+        font-style: italic;
+        margin: 5px 0;
+        padding: 20px;
+        width: 700px;
+        background-color: $color-white;
+        border: 1px solid $color-primary;
+      }
+      span.wpcf7-list-item{
+        margin: 30px 0;
+        display: flex;
+        width: 670px;
+        justify-content: flex-start;
+        input{
+          width: 30px;
+        }
+      }
+      span.wpcf7-list-item-label{
+        text-align: left;
+        width: 650px;
+      }
+      input, textarea{
+          color: $color-secondary;
+          font-size: 16px;
+      }
+
+      textarea{
+        padding: 20px;
+        font-style: italic;
+        width: 700px;
+        background-color: $color-white;
+        border: 1px solid $color-primary;
+      }
+      input.wpcf7-submit{
+        width: 150px;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 15px;
+        background-color: $color-secondary!important;
+        border: none;
+        margin-bottom: 40px;
+
+      }
+      input.wpcf7-submit:hover{
+          background-color: $color-primary!important;
+          color: $color-secondary;
+      }
+    }
+  }
+}
+
+// à partir de 846px
+@media screen and (max-width: 846px){
+  div.container-historique{
+    div.favoris{
+      div.formulaire-contact{
+        input{
+          width: 400px;
+        }
+        span.wpcf7-list-item{
+          text-align: center;
+          margin: 0 auto;
+          width: 370px;
+        }
+        span.wpcf7-list-item-label{
+          width: 650px;
+        }
+        textarea{
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+// à partir de 480px
+@media screen and (max-width: 480px){
+  div.container-historique{
+    div.favoris{
+      div.formulaire-contact{
+        input{
+          width: 300px;
+        }
+        span.wpcf7-list-item{
+          width: 270px;
+        }
+        span.wpcf7-list-item-label{
+          width: 300px;
+        }
+        textarea{
+          width: 300px;
+        }
+      }
+    }
+  }
+}

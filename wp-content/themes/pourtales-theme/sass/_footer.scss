@@ -1,0 +1,51 @@
+div.container-footer{
+  background-color: $color-black;
+  padding: 60px 70px;
+
+  div.content-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img.logo-footer{
+
+        width: 213px;
+        height: 90px;
+    }
+    p.contact{
+      font-size: 14px;
+      color: $color-white;
+    }
+    img.social-icons{
+      width: 45px;
+      height: 45px;
+      padding: 10px;
+    }
+  }
+
+}
+
+
+// à partir de 1050px
+@media screen and (max-width: 1050px){
+  div.container-footer{
+    background-color: $color-black;
+    padding: 60px 70px;
+
+    div.content-footer{
+      display: block;
+      img.logo-footer{
+      margin-bottom: 30px;
+      }
+      p.contact{
+        margin-bottom: 30px;
+      }
+      img.social-icons{
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+      }
+    }
+
+  }
+
+}

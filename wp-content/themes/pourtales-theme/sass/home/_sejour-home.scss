@@ -1,0 +1,178 @@
+div.container-sejour{
+  padding: 0;
+  div.title-sejour{
+    display: flex;
+    background-color: $color-secondary;
+    div.text-sejour{
+      width: 50%;
+      color: $color-white;
+      padding: 140px 0 0 140px;
+      h3{
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 26px;
+        br.mobile{
+          display: none;
+        }
+      }
+      p{
+        font-size: 18px;
+      }
+      div.formulaire_reservation{
+        padding-top: 30px;
+        p.formulaire-arrive, p.formulaire-depart{
+          padding-top: 20px;
+          input{
+            padding: 5px 0 7px 16px;
+            text-align: right;
+            color: $color-white;
+            background-color: $color-secondary;
+            border: 1px solid $color-primary;
+          }
+        }
+        p.formulaire-depart{
+          padding-bottom: 60px;
+        }
+        a.cta-reserver{
+          margin-top: 100px;
+          font-size: 20px;
+          font-weight: 700;
+          padding: 10px 25px;
+          color: $color-secondary;
+          background-color: $color-white;
+        }
+      }
+    }
+    div.img-sejour{
+      width: 50%;
+    }
+  }
+  img.losange-deco{
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 47.7%;
+    top:40%;
+  }
+}
+
+// à partir de 1380px
+@media screen and (max-width: 1380px){
+  div.container-sejour{
+    padding: 0;
+    div.title-sejour{
+      display: flex;
+      background-color: $color-secondary;
+      div.text-sejour{
+        padding: 70px 0 0 70px;
+      }
+    }
+  }
+}
+
+// à partir de 1200px
+@media screen and (max-width: 1200px){
+  div.container-sejour{
+    padding: 0;
+      text-align: center;
+      margin: 0 auto;
+    div.title-sejour{
+      display: block;
+      div.text-sejour{
+        width: 100%;
+        padding: 100px 0 90px 0;
+        div.formulaire_reservation{
+          display: flex;
+          justify-content: center;
+          p.formulaire-arrive, p.formulaire-depart{
+            padding-top: 10px;
+            padding-right: 40px;
+          }
+          p.formulaire-depart{
+            padding-bottom: 0px;
+          }
+          a.cta-reserver{
+            display: flex;
+            margin-top: 5px;
+          }
+        }
+      }
+      div.img-sejour{
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+        padding-bottom: 100px;
+      }
+    }
+    img.losange-deco{
+      display: none;
+    }
+  }
+}
+
+// à partir de 1060px
+@media screen and (max-width: 1060px){
+  div.container-sejour{
+    padding: 0;
+      text-align: center;
+      margin: 0 auto;
+    div.title-sejour{
+      display: block;
+      div.text-sejour{
+        width: inherit;
+        padding: 100px 0 90px 0;
+        div.formulaire_reservation{
+          display: block;
+          justify-content: center;
+          p.formulaire-arrive, p.formulaire-depart{
+            padding-top: 10px;
+            padding-right: 40px;
+          }
+          p.formulaire-depart{
+            padding-bottom: 0px;
+          }
+          a.cta-reserver{
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            width:min-content;
+            margin-top: 50px;
+          }
+        }
+      }
+      div.img-sejour{
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+        padding-bottom: 100px;
+      }
+    }
+    img.losange-deco{
+      display: none;
+    }
+  }
+}
+
+// à partir de 550px
+@media screen and (max-width: 550px){
+  div.container-sejour{
+    div.title-sejour{
+
+      div.text-sejour{
+        h3{
+          line-height: 40px;
+          br.mobile{
+            display:block;
+          }
+        }
+      }
+
+
+      div.img-sejour{
+        width: 100%;
+        padding-bottom:0;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body.home{
+  button#responsive-menu-button{
+  right: 3%;
+  margin-top:2%;
+  background-color: rgba(0,0,0,0);
+  span.responsive-menu-box{
+    span.responsive-menu-inner:before,span.responsive-menu-inner:after,span.responsive-menu-inner{
+      background-color: $color-primary;
+    }
+  }
+}
+}
