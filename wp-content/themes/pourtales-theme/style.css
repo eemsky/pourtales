@@ -260,6 +260,11 @@ a img.aligncenter {
   }
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
 body.home button#responsive-menu-button {
   right: 3%;
   margin-top: 2%;
@@ -712,6 +717,11 @@ div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation
   background-color: #fff;
 }
 
+div.container-sejour div.title-sejour div.text-sejour div.formulaire_reservation a.cta-reserver:hover {
+  color: #000;
+  background-color: #cdae7a;
+}
+
 div.container-sejour div.title-sejour div.img-sejour {
   width: 50%;
 }
@@ -917,6 +927,10 @@ div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track
   background-color: #fff;
 }
 
+div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire a.cta-reserver:hover {
+  background-color: #cdae7a;
+}
+
 div.container-slider-histoire div.slider-histoire div.slick-list div.slick-track div.slick-slide div.img-bg-histoire p.city {
   margin-top: 13%;
   padding-bottom: 5%;
@@ -1037,6 +1051,10 @@ div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track d
   background-color: #fff;
 }
 
+div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait a.cta-reserver:hover {
+  background-color: #cdae7a;
+}
+
 div.container-slider-forfait div.slider-forfait div.slick-list div.slick-track div.slick-slide div.img-bg-forfait p.city {
   margin-top: 13%;
   padding-bottom: 5%;
@@ -1155,6 +1173,11 @@ div.container-slider-contact div.slider-contact div.slick-list div.slick-track d
   padding: 10px 25px;
   color: #000;
   background-color: #fff;
+}
+
+div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact a.cta-reserver:hover {
+  color: #000;
+  background-color: #cdae7a;
 }
 
 div.container-slider-contact div.slider-contact div.slick-list div.slick-track div.slick-slide div.img-bg-contact p.city {
@@ -1517,6 +1540,11 @@ div.container-decouvrir div.btn-contact a span {
   font-weight: 700;
 }
 
+div.container-decouvrir div.btn-contact:hover a {
+  color: #000;
+  background-color: #cdae7a;
+}
+
 @media screen and (max-width: 1000px) {
   div.container-historique {
     max-width: 100%;
@@ -1777,6 +1805,11 @@ div.container-slider-perso div.slider-perso div.text-single a.cta-reserver {
   background-color: #000;
 }
 
+div.container-slider-perso div.slider-perso div.text-single a.cta-reserver:hover {
+  color: #000;
+  background-color: #cdae7a;
+}
+
 div.text_cadre_perso {
   display: flex;
   padding: 0 10% 80px 4%;
@@ -1808,14 +1841,15 @@ div.tarifs-size div.btn-contact {
 
 div.tarifs-size div.btn-contact a {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 10px 25px;
   color: #fff;
   background-color: #000;
 }
 
-div.tarifs-size div.btn-contact a span {
+div.tarifs-size div.btn-contact a span.bold {
   font-weight: 700;
+  font-style: italic;
 }
 
 div.tarifs-size div.tarifs {
@@ -1862,13 +1896,20 @@ div.tarifs-size div.tarifs div.tarif-left div.points_price p.text-price {
 div.tarifs-size div.tarifs div.tarif-right {
   width: 35%;
   background-color: #cdae7a;
-  font-size: 17px;
+  text-align: center;
 }
 
 div.tarifs-size div.tarifs div.tarif-right h4.title-points {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+}
+
+div.tarifs-size div.tarifs div.tarif-right p {
+  font-weight: 400;
+  padding-top: 15px;
+  font-size: 17px;
+  line-height: 25px;
 }
 
 div.tarifs-size div.tarifs div.tarif-right a.cta-reserver {
@@ -1879,12 +1920,23 @@ div.tarifs-size div.tarifs div.tarif-right a.cta-reserver {
   background-color: #000;
 }
 
+div.tarifs-size div.tarifs div.tarif-right a.cta-reserver:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+div.tarifs-size div.btn-contact a.cta-reserver:hover {
+  color: #000;
+  background-color: #cdae7a;
+}
+
 @media screen and (max-width: 900px) {
-  div.container-slider-perso div.slider-perso {
+  div.container-slider-perso {
     min-height: 600px;
   }
   div.container-slider-perso div.slider-perso img.img-home {
-    width: 100%;
+    min-height: 600px;
+    width: auto;
   }
   div.container-slider-perso div.slider-perso div.text-single {
     color: #000;
@@ -1912,9 +1964,30 @@ div.tarifs-size div.tarifs div.tarif-right a.cta-reserver {
   }
 }
 
-body {
-  font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
+@media screen and (max-width: 1000px) {
+  div.tarifs-size {
+    width: 100%;
+  }
+  div.tarifs-size div.tarifs {
+    display: block;
+    margin: 0 auto 0 0;
+  }
+  div.tarifs-size div.tarifs div.tarif-left {
+    width: 100%;
+  }
+  div.tarifs-size div.tarifs div.tarif-right {
+    text-align: left;
+    width: 100%;
+  }
+  div.tarifs-size div.tarifs div.tarif-right h4.title-points {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  div.tarifs-size div.btn-contact a.cta-reserver {
+    font-size: 17px;
+  }
 }
 
 a {

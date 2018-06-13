@@ -41,6 +41,10 @@ div.container-sejour{
           color: $color-secondary;
           background-color: $color-white;
         }
+        a.cta-reserver:hover{
+          color: $color-secondary;
+          background-color: $color-primary;
+        }
       }
     }
     div.img-sejour{
@@ -167,8 +171,6 @@ div.container-sejour{
           }
         }
       }
-
-
       div.img-sejour{
         width: 100%;
         padding-bottom:0;

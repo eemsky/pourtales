@@ -145,11 +145,16 @@ div.container-decouvrir{
       background-color: $color-secondary;
       span{
         font-weight: 700;
-
       }
     }
   }
-
+  // bouton contact
+  div.btn-contact:hover{
+    a{
+      color: $color-secondary;
+      background-color: $color-primary;
+    }
+  }
 }
 
 // à partir de 1000px
@@ -180,9 +185,7 @@ div.container-decouvrir{
            margin: 39px auto 0 auto;
          }
        }
-
      }
-
   }
 
   // découvrir
@@ -195,33 +198,20 @@ div.container-decouvrir{
         }
       }
     }
-
   }
-
-
-
-
-
-
-
-
-
 }
 
 
 
 // à partir de 510px
 @media screen and (max-width: 570px){
-
   div.container-historique{
     max-width: 100%;
-
      div.favoris{
        text-align: center;
        padding: 0;
        margin: 0 auto;
        display: block;
-
        div.forfait-mariage{
          width: 100%;
          margin: 30px auto 0 auto;
@@ -231,7 +221,6 @@ div.container-decouvrir{
          div.forfait-wellness{
            width: 100%;
            margin: 0 auto;
-
            img.losange-small{
              margin-top: 15px;
              width: 20px;
@@ -241,13 +230,12 @@ div.container-decouvrir{
          div.forfait-gourmet{
            margin: 0px auto 0 auto;
            width: 100%;
-
          }
        }
 
      }
   }
-  // découvrir
+  // Découvrir
   div.container-decouvrir{
     margin: 30px auto 30px auto;
     width: auto;
@@ -266,7 +254,7 @@ div.container-decouvrir{
         height: 20px;
       }
     }
-    //gallerie
+    //Gallerie
     div.bloc-forfaits{
       display: block;
       padding: 60px 0 40px 0;
@@ -298,10 +286,9 @@ div.container-decouvrir{
             height: 20px;
           }
         }
-
       }
     }
-    // bouton contact
+    // Bouton
     div.btn-contact{
       text-align: center;
       margin-bottom: 30px;
@@ -314,14 +301,8 @@ div.container-decouvrir{
         background-color: $color-secondary;
         span{
           font-weight: 700;
-
         }
       }
     }
-
   }
-
-
-
-
 }

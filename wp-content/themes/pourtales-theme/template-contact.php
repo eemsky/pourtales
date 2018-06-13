@@ -5,7 +5,7 @@
 
   get_header();?>
 
-  <!-- //////////////////////////// slider //////////////////////////// -->
+  <!-- //////////////////////////// Slider //////////////////////////// -->
       <div class="container container-slider-contact">
         <div class="row justify-content-center">
             <div class="col-12">
@@ -34,24 +34,23 @@
           </div>
       </div>
 
-      <!-- //////////////////////////// contactez-nous //////////////////////////// -->
+      <!-- //////////////////////////// Contactez-nous //////////////////////////// -->
           <div class="container container-historique">
             <div class="row justify-content-center">
-
+              <!--Title-->
               <div class="col-12">
                  <div id="formulairecontact" class="title-historique">
                    <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="icon-losange">
                    <h3>Contactez-nous<br/><span class="bold">Remplissez le formulaire ci-dessous.</span></h3>
                  </div>
                </div>
+               <!--Formulaire-->
                <div class="col-12 justify-content-center favoris">
-
                  <div class="formulaire-contact">
                    <?php echo do_shortcode( '[contact-form-7 id="97" title="Formulaire de contact"]' ); ?>
                  </div>
-
-
                </div>
+               <!---->
          </div>
        </div>
 

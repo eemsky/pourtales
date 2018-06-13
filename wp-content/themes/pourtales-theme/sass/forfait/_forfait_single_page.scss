@@ -1,3 +1,4 @@
+//Container slider
 div.container-slider-perso{
   div.slider-perso{
     img.img-home{
@@ -20,6 +21,7 @@ div.container-slider-perso{
         line-height: 60px;
         margin-bottom: 30px;
       }
+      //bouton
       a.cta-reserver{
         font-size: 20px;
         font-weight: 700;
@@ -27,9 +29,15 @@ div.container-slider-perso{
         color: $color-primary;
         background-color: $color-secondary;
       }
+      a.cta-reserver:hover{
+        color: $color-secondary;
+        background-color: $color-primary;
+      }
     }
   }
 }
+
+// Container texte explicatif
 div.text_cadre_perso{
     display: flex;
     padding: 0 10% 80px 4%;
@@ -46,6 +54,7 @@ div.text_cadre_perso{
   }
 }
 
+// Container tarifs
 div.tarifs-size{
   width: 900px;
   margin: 0 auto;
@@ -54,26 +63,26 @@ div.tarifs-size{
     margin: 100px auto 70px auto;
     a{
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 400;
       padding: 10px 25px;
       color: $color-white;
       background-color: $color-secondary;
-      span{
+      span.bold{
         font-weight: 700;
+        font-style: italic;
 
       }
     }
   }
+  //div
   div.tarifs{
     display: flex;
     justify-content: center;
-
-
     div.tarif-left,div.tarif-right{
       padding: 40px;
     }
 
-    // LEFT -----------------------------
+    // div LEFT -----------------------------
     div.tarif-left{
       width: 65%;
       background-color: $color-grey;
@@ -101,17 +110,24 @@ div.tarifs-size{
         }
       }
     }
-    // RIGHT -----------------------------
+    // div RIGHT -----------------------------
     div.tarif-right{
       width: 35%;
       background-color: $color-primary;
-      font-size: 17px;
+      text-align: center;
 
       h4.title-points{
         font-size: 20px;
         font-weight: 700;
         text-align: center;
       }
+      p{
+        font-weight: 400;
+        padding-top: 15px;
+        font-size: 17px;
+        line-height: 25px;
+      }
+      //bouton
       a.cta-reserver{
         font-size: 20px;
         font-weight: 700;
@@ -119,8 +135,18 @@ div.tarifs-size{
         color: $color-white;
         background-color: $color-secondary;
       }
+      a.cta-reserver:hover{
+        color: $color-secondary;
+        background-color: $color-white;
+      }
 
-
+    }
+  }
+  //bouton
+  div.btn-contact{
+    a.cta-reserver:hover{
+      color: $color-secondary;
+      background-color: $color-primary;
     }
   }
 }
@@ -132,12 +158,12 @@ div.tarifs-size{
 // à partir de 900
 @media screen and (max-width: 900px){
   div.container-slider-perso{
+    min-height: 600px;
+
     div.slider-perso{
-      min-height: 600px;
-
       img.img-home{
-        width: 100%;
-
+        min-height: 600px;
+        width: auto;
       }
       div.text-single{
         color: $color-secondary;
@@ -165,5 +191,41 @@ div.tarifs-size{
         }
       }
     }
+  }
+}
+
+// à partir de 1000
+@media screen and (max-width: 1000px){
+  div.tarifs-size{
+    width: 100%;
+    div.tarifs{
+      display: block;
+      margin: 0 auto 0 0;
+      // LEFT -----------------------------
+      div.tarif-left{
+        width: 100%;
+      }
+      // RIGHT -----------------------------
+      div.tarif-right{
+        text-align: left;
+        width: 100%;
+        h4.title-points{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+// à partir de 420
+@media screen and (max-width: 420px){
+
+  div.tarifs-size{
+    div.btn-contact{
+      a.cta-reserver{
+        font-size: 17px;
+      }
+    }
+
   }
 }

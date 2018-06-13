@@ -22,10 +22,10 @@
                 foreach( $slidehistoire as $slidehistoires) {
                     // contenu à afficher
                     echo '<div class="img-bg-histoire" style="background:url('.get_the_post_thumbnail_url($slidehistoires->ID).'); background-size:cover;width:100%;background-position-x:right;">'; // image.')">';
-                        echo '<h2 class="title_slider-histoire">'.get_field('title_slider-histoire', $slidehistoires->ID).'</h2>'; // Titre slider
-                        echo '<p class="subtitle_slider-histoire">'.get_field('subtitle_slider-histoire', $slidehistoires->ID).'</p>'; // Texte slider
-                        echo '<a class="cta-reserver" href="'.get_permalink(14).'" title="">Réserver</a>';
-                        echo '<p class="city"><span class="city-name">Strasbourg</span>, France</p>';
+                        echo '<h2 class="title_slider-histoire wow fadeInRight">'.get_field('title_slider-histoire', $slidehistoires->ID).'</h2>'; // Titre slider
+                        echo '<p class="subtitle_slider-histoire wow fadeInRight">'.get_field('subtitle_slider-histoire', $slidehistoires->ID).'</p>'; // Texte slider
+                        echo '<a class="cta-reserver wow fadeInRight" href="'.get_permalink(14).'" title="">Réserver</a>';
+                        echo '<p class="city wow fadeInRight"><span class="city-name wow fadeInRight">Strasbourg</span>, France</p>';
                       echo '</div>';
                 }
                   ?>
@@ -42,7 +42,7 @@
 
               <div class="col-12">
                  <div class="title-historique">
-                   <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="icon-losange">
+                   <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="icon-losange wow bounceInUp">
                    <h3>Historique<br/><span class="bold">à savoir</span></h3>
                  </div>
                </div>
@@ -55,7 +55,7 @@
               </div>
               <!--château de pourtalès-->
               <div class="col-12 content-points">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="deco-losange">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="deco-losange wow bounceInUp">
                 <div>
                   <h4 class="title-points"><?php the_field('1_point-titre')?></h4> <!-- Titre -->
                   <p class="text-points"><?php the_field('1_point-text')?></p> <!-- Titre -->
@@ -63,7 +63,7 @@
               </div>
               <!--valeurs-->
               <div class="col-12 content-points">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="deco-losange">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="deco-losange wow bounceInUp">
                 <div>
                   <h4 class="title-points"><?php the_field('2_point-titre')?></h4> <!-- Titre -->
                   <p class="text-points"><?php the_field('2_point-text')?></p> <!-- Titre -->
@@ -71,7 +71,7 @@
               </div>
               <!--missions-->
               <div class="col-12 content-points">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="deco-losange">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="deco-losange wow bounceInUp">
                 <div class="col-12">
                   <h4 class="title-points"><?php the_field('3_point-titre')?></h4> <!-- Titre -->
                   <!--slider missions-->

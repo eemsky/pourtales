@@ -7,7 +7,7 @@
 
 
 
-  <!-- //////////////////////////// slider //////////////////////////// -->
+  <!-- //////////////////////////// Slider //////////////////////////// -->
       <div class="container container-slider">
         <div class="row justify-content-center">
             <div class="col-12">
@@ -24,10 +24,10 @@
                 foreach( $slides as $slide) {
                     // contenu à afficher
                     echo '<div class="img-bg-home" style="background:url('.get_the_post_thumbnail_url($slide->ID).'); background-size:cover;width:100%;background-position-x:right;">'; // image.')">';
-                        echo '<h2 class="title_slider-home">'.get_field('title_slider-home', $slide->ID).'</h2>'; // Titre slider
-                        echo '<p class="subtitle_slider-home">'.get_field('subtitle_slider-home', $slide->ID).'</p>'; // Texte slider
-                        echo '<a class="cta-reserver" href="'.get_permalink(12).'" title="">Réserver</a>';
-                        echo '<p class="city"><span class="city-name">Strasbourg</span>, France</p>';
+                        echo '<h2 class="title_slider-home wow fadeInRight">'.get_field('title_slider-home', $slide->ID).'</h2>'; // Titre slider
+                        echo '<p class="subtitle_slider-home wow fadeInRight">'.get_field('subtitle_slider-home', $slide->ID).'</p>'; // Texte slider
+                        echo '<a class="cta-reserver wow fadeInRight" href="'.get_permalink(12).'" title="">Réserver</a>';
+                        echo '<p class="city"><span class="wow fadeInRight city-name">Strasbourg</span>, France</p>';
                       echo '</div>';
                 }
                   ?>
@@ -36,58 +36,61 @@
           </div>
       </div>
 
-      <!-- //////////////////////////// distractions //////////////////////////// -->
-
-      <div class="container container-distractions">
+      <!-- //////////////////////////// Distractions //////////////////////////// -->
+      <div class="container container-distractions wow bounceInUp">
         <div class="row justify-content-center">
+           <!--title-->
            <div class="col-12">
               <div class="title-distractions">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="icon-losange">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="icon-losange wow bounceInUp">
                 <h3>Distractions<br/><span class="bold">au château</span></h3>
               </div>
             </div>
+            <!--content-->
             <div class="col-12">
-
               <div class="bloc-flex">
-                  <!--seminaire-->
+                  <!--Séminaire-->
                   <div class="col-md-3 bloc-seminaire">
                     <div class="img-seminaire">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/1-distraction-seminaire.png" alt="séminaires et événéments" class="img-seminaire">
                       <h4>Séminaires<br/><span class="bold">et événements</span></h4>
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-small">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-small wow bounceInUp">
                     </div>
                   </div>
-                  <!--parc-->
+                  <!--Parc-->
                   <div class="col-md-4 bloc-parc">
                     <div class="img-parc">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/1-distraction-parc.png" alt="séminaires et événéments" class="img-parc">
                       <h4>Séminaires<br/><span class="bold">et événements</span></h4>
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-small">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-small wow bounceInUp">
                     </div>
                   </div>
-                  <!--give-->
+                  <!--Give-->
                   <div class="col-md-3 bloc-give">
                     <div class="img-give">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/1-distraction-seminaire.png" alt="séminaires et événéments" class="img-give">
                       <h4>Séminaires<br/><span class="bold">et événements</span></h4>
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-small">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-small wow bounceInUp">
                     </div>
                   </div>
+                  <!---->
               </div>
             </div>
               <p><?php the_field('text_distractions'); ?></p>
             </div>
         </div>
 
-        <!-- //////////////////////////// actu //////////////////////////// -->
-            <div class="container container-actu">
+        <!-- //////////////////////////// Actualité //////////////////////////// -->
+            <div class="container container-actu wow bounceInUp">
               <div class="row justify-content-center">
+                <!--title-->
                 <div class="col-12">
                    <div class="title-actu">
-                     <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="icon-losange">
+                     <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="icon-losange wow bounceInUp">
                      <h3>Actualités<br/></h3>
                    </div>
                  </div>
+                 <!--slider-->
                   <div class="col-lg-8 col-10">
                     <div class="slider-actu">
                       <?php
@@ -113,16 +116,17 @@
                         ?>
                   </div>
                   </div>
+                  <!---->
                 </div>
             </div>
 
-            <!-- //////////////////////////// réserver votre séjour //////////////////////////// -->
+            <!-- //////////////////////////// Réserver votre séjour //////////////////////////// -->
             <div class="container container-sejour">
               <div class="row justify-content-center">
                  <div class="col-12">
                     <div class="title-sejour">
-
-                      <div class="text-sejour">
+                      <!--bloc left - texte -->
+                      <div class="text-sejour wow fadeInRight">
                         <h3>Réserver <br class="mobile"/>votre séjour</span></h3>
                         <p>Passez des moments inoubliables</p>
                         <div class="formulaire_reservation">
@@ -131,13 +135,12 @@
                           <a href="<?php echo get_permalink(14);?>" class="cta-reserver">Réserver</a>
                         </div>
                       </div>
-
+                      <!--bloc right - image séjour-->
                       <div class="img-sejour">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/1-castle-sejour.png" alt="castle" class="">
                       </div>
-
                     </div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-deco">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-deco wow flipInY">
                 </div>
               </div>
             </div>

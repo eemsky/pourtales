@@ -17,7 +17,6 @@ div.container-slider-forfait{
               font-size: 70px;
               line-height: 60px;
             }
-
             p.subtitle_slider-forfait{
               font-size: 25px;
               font-weight: 300;
@@ -31,10 +30,12 @@ div.container-slider-forfait{
               color: $color-secondary;
               background-color: $color-white;
             }
+            a.cta-reserver:hover{
+              background-color: $color-primary;
+            }
             p.city{
               margin-top:13%;
               padding-bottom: 5%;
-
               span.city-name{
                 font-weight: 700;
                 font-size: 17px;
@@ -48,7 +49,6 @@ div.container-slider-forfait{
       padding-right: 3%;
       text-align: right;
       padding-bottom: 3%;
-
       li{
         button::before:active{
           font-size:30px;
