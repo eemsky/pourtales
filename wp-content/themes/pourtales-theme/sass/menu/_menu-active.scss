@@ -1,16 +1,25 @@
 div#responsive-menu-container{
   background-color: $color-secondary;
-  opacity: 0.7;
+  opacity: 1;
   width: 100%;
+  padding-top: 200px;
+
   div#responsive-menu-wrapper{
     ul#responsive-menu{
       li.responsive-menu-item{
           a{
+            padding-top: 25px;
             background-color: $color-secondary;
-
           }
 
       }
+    }
+    div#responsive-menu-additional-content{
+      display: none;
+    }
+    div#responsive-menu-search-box{
+      display: none;
+      padding: 0;
     }
   }
 }

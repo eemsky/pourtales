@@ -61,15 +61,15 @@
                   <div class="col-md-4 bloc-parc">
                     <div class="img-parc">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/1-distraction-parc.png" alt="séminaires et événéments" class="img-parc">
-                      <h4>Séminaires<br/><span class="bold">et événements</span></h4>
+                      <h4>Parc intéractif<br/><span class="bold">un château</span></h4>
                       <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-small wow bounceInUp">
                     </div>
                   </div>
                   <!--Give-->
                   <div class="col-md-3 bloc-give">
                     <div class="img-give">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/1-distraction-seminaire.png" alt="séminaires et événéments" class="img-give">
-                      <h4>Séminaires<br/><span class="bold">et événements</span></h4>
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/1-distraction-give.png" alt="séminaires et événéments" class="img-give">
+                      <h4>GIVE<br/><span class="bold">institute</span></h4>
                       <img src="<?php echo get_template_directory_uri(); ?>/img/losange.svg" alt="icon losange" class="losange-small wow bounceInUp">
                     </div>
                   </div>

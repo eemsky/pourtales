@@ -301,12 +301,23 @@ nav.nav {
 
 div#responsive-menu-container {
   background-color: #000;
-  opacity: 0.7;
+  opacity: 1;
   width: 100%;
+  padding-top: 200px;
 }
 
 div#responsive-menu-container div#responsive-menu-wrapper ul#responsive-menu li.responsive-menu-item a {
+  padding-top: 25px;
   background-color: #000;
+}
+
+div#responsive-menu-container div#responsive-menu-wrapper div#responsive-menu-additional-content {
+  display: none;
+}
+
+div#responsive-menu-container div#responsive-menu-wrapper div#responsive-menu-search-box {
+  display: none;
+  padding: 0;
 }
 
 div.container-slider {
